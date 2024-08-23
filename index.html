@@ -4,27 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文本比对工具</title>
+    <title>文本对比工具</title>
     <link rel="icon" href="https://jerryz.com.cn/favicon.png">
     <script src="https://cdn.jerryz.com.cn/gh/YangguangZhou/FileDiff@main/scripts/diff_match_patch.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2597042766299857"
         crossorigin="anonymous"></script>
     <meta name="author" content="Jerry Zhou">
     <meta name="copyright" content="Copyright © 2023-2024 Jerry Zhou">
-    <meta name="description" content="一个简单的文本比对工具，可以比较两个文本的不同，并给出相似度。">
-    <meta name="keywords" content="文本比对工具,文本比较,文本对比,文本差异,文本相似度">
+    <meta name="description" content="一个简单的文本对比工具，可以比较两个文本的不同，并给出相似度。">
+    <meta name="keywords" content="文本对比工具,文本比较,文本对比,文本差异,文本相似度">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <h1 class="title">文本比对工具</h1>
+    <h1 class="title">文本对比工具</h1>
     <div class="container">
         <div class="column">
-            <textarea id="input1" class="text-input" placeholder="在此输入文本一"></textarea>
+            <textarea id="input1" class="text-input" placeholder="在此输入文本一" spellcheck="false"></textarea>
             <p id="count1" class="count"></p>
         </div>
         <div class="column">
-            <textarea id="input2" class="text-input" placeholder="在此输入文本二"></textarea>
+            <textarea id="input2" class="text-input" placeholder="在此输入文本二" spellcheck="false"></textarea>
             <p id="count2" class="count"></p>
         </div>
         <div class="column">
@@ -33,7 +33,7 @@
         </div>
     </div>
     <footer>
-        Copyright © 2023-2024 <a href="https://jerryz.com.cn" target="_blank">Jerry Zhou</a>
+        Copyright © 2023-2024 <a href="https://jerryz.com.cn" target="_blank">Jerry Zhou</a>&nbsp;|&nbsp;Modified by <a href="https://github.com/NailFec" target="_blank">NailFec</a>
     </footer>
     <script src="script.js"></script>
 </body>
