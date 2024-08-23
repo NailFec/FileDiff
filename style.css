@@ -1,0 +1,159 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAFAFA;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.column {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.text-input,
+.text-output {
+    width: 100%;
+    height: 150px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.count {
+    font-size: 12px;
+    color: #333;
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.text-output {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.text-output p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+ins {
+    background-color: #c6fbc3;
+    text-decoration: none;
+}
+
+del {
+    background-color: #fbcfc6;
+    text-decoration: line-through;
+    border-bottom: 1px solid #ff0000;
+}
+
+.insert {
+    background-color: #c6fbc3;
+}
+
+.delete {
+    background-color: #fbcfc6;
+    text-decoration: line-through;
+}
+
+.line-number {
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+    margin-right: 10px;
+    color: #888;
+}
+
+/* 移动设备适配 */
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .text-input,
+    .text-output {
+        height: 120px;
+    }
+
+    .container {
+        padding-top: 5px;
+    }
+}
+
+/* 桌面设备适配 */
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .column {
+        width: 32%;
+    }
+
+    .text-input,
+    .text-output {
+        height: calc(100vh - 180px);
+    }
+
+    .title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .count {
+        font-size: 14px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    color: #333;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
